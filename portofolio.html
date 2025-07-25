@@ -1,0 +1,394 @@
+<html lang="id">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Portofolio Teknik Industri - Mahasiswa
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-50 text-gray-800">
+  <header class="bg-navy-900 bg-[#1e2a47] shadow-md sticky top-0 z-50">
+   <nav class="container mx-auto flex flex-wrap items-center justify-between p-4 md:p-6">
+    <a class="text-white text-2xl font-semibold tracking-wide" href="#home">
+     Portofolio TI
+    </a>
+    <input class="hidden" id="menu-toggle" type="checkbox"/>
+    <label class="cursor-pointer md:hidden block text-white" for="menu-toggle">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </label>
+    <ul class="hidden md:flex md:items-center md:space-x-8 text-white font-medium text-lg" id="menu">
+     <li>
+      <a class="hover:text-blue-400 transition" href="#home">
+       Home
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-blue-400 transition" href="#about">
+       Tentang Saya
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-blue-400 transition" href="#Proyek">
+       Proyek
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-blue-400 transition" href="#experience">
+       Pengalaman
+      </a>
+     </li>
+     <li>
+      <a class="hover:text-blue-400 transition" href="#contact">
+       Kontak
+      </a>
+     </li>
+    </ul>
+   </nav>
+   <script>
+    const menuToggle = document.getElementById('menu-toggle');
+      const menu = document.getElementById('menu');
+      menuToggle.addEventListener('change', () => {
+        if (menuToggle.checked) {
+          menu.classList.remove('hidden');
+          menu.classList.add('flex', 'flex-col', 'space-y-4', 'p-4', 'bg-[#1e2a47]');
+        } else {
+          menu.classList.add('hidden');
+          menu.classList.remove('flex', 'flex-col', 'space-y-4', 'p-4', 'bg-[#1e2a47]');
+        }
+      });
+   </script>
+  </header>
+  <main class="container mx-auto px-6 md:px-12 py-12 space-y-20 max-w-7xl">
+   <!-- Home Section -->
+   <section class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16" id="home">
+    <div class="flex-shrink-0 w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-[#1e2a47] shadow-lg">
+     <img alt="Foto profil seorang mahasiswa Teknik Industri mengenakan kemeja putih dengan latar belakang biru dongker" class="w-full h-full object-cover" height="224" loading="lazy" src="rifa.jpg" width="224"/>
+    </div>
+    <div class="max-w-xl text-center md:text-left">
+     <h1 class="text-4xl md:text-5xl font-semibold text-[#1e2a47] leading-tight">
+      Nurul Maghrifah
+     </h1>
+     <p class="mt-2 text-xl text-blue-800 font-medium">
+      Industrial Engineering Student | Data Analyst | Continuous Improvement Enthusiast
+     </p>
+     <p class="mt-6 text-gray-700 text-lg leading-relaxed">
+      Mahasiswa aktif S1 Teknik Industri di Jakarta Global University yang memiliki ketertarikan besar pada 
+pengembangan sistem produksi dan manajemen kerja yang efisien. Dibekali sertifikasi BSN Sistem 
+Manajemen K3 berbasis SNI ISO 45001:2018, serta pengetahuan dalam ergonomi, perencanaan 
+kerja, dan pengendalian proses produksi. Terbiasa bekerja dengan perangkat lunak pendukung 
+seperti Microsoft Excel, AutoCAD, dan Minitab. Disiplin waktu, memiliki kemampuan komunikasi yang 
+baik, dan mampu bekerja sama secara efektif dalam tim. Siap memberikan kontribusi nyata melalui 
+program magang dengan semangat belajar yang tinggi dan tanggung jawab penuh terhadap tugas. 
+     </p>
+     <a aria-label="Unduh CV dalam format PDF" class="inline-block mt-8 px-6 py-3 bg-[#1e2a47] text-white rounded-md font-semibold shadow-md hover:bg-blue-800 transition" download="" href="CV_NurulMaghrifah.pdf">
+      <i class="fas fa-download mr-2">
+      </i>
+      Unduh CV
+     </a>
+    </div>
+   </section>
+   <!-- About Me Section -->
+   <section class="bg-white rounded-lg shadow-md p-8 md:p-12" id="about">
+    <h2 class="text-3xl font-semibold text-[#1e2a47] mb-8 border-b-2 border-blue-800 inline-block pb-2">
+     Tentang Saya
+    </h2>
+    <div class="space-y-8 md:space-y-12">
+     <div>
+      <h3 class="text-xl font-semibold text-blue-900 mb-3">
+       Latar Belakang Pendidikan &amp; Pencapaian
+      </h3>
+      <p class="text-gray-700 leading-relaxed">
+       Saya sedang menempuh pendidikan S1 Teknik Industri di Universitas Global Jakarta dengan (GPA: 3.66/4.00) . Selama kuliah, saya aktif dalam berbagai kegiatan akademik dan organisasi, serta meraih penghargaan sebagai mahasiswa.
+      </p>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-blue-900 mb-3">
+       Minat Bidang Teknik Industri
+      </h3>
+      <ul class="list-disc list-inside text-gray-700 space-y-1">
+       <li>
+        Inventory
+       </li>
+       <li>
+        Supply Chain Management
+       </li>
+       <li>
+        Quality Control &amp; Six Sigma
+       </li>
+       <li>
+        Ergonomi &amp; Keselamatan Kerja
+       </li>
+       <li>
+        K3 (Keselamatan dan Kesehatan Kejra)
+       </li>
+      </ul>
+     </div>
+     <div>
+      <h3 class="text-xl font-semibold text-blue-900 mb-3">
+       Soft Skill &amp; Hard Skill
+      </h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700">
+       <div>
+        <h4 class="font-semibold text-blue-800 mb-2">
+         Soft Skills
+        </h4>
+        <ul class="list-disc list-inside space-y-1">
+         <li>
+          Problem Solving
+         </li>
+         <li>
+          Teamwork &amp; Leadership
+         </li>
+         <li>
+          Communication
+         </li>
+         <li>
+          Critical Thinking
+         </li>
+         <li>
+          Time Management
+         </li>
+        </ul>
+       </div>
+       <div>
+        <h4 class="font-semibold text-blue-800 mb-2">
+         Hard Skills
+        </h4>
+        <ul class="list-disc list-inside space-y-1">
+         <li>
+          Lean Manufacturing
+         </li>
+         <li>
+          Microsoft Excel (Pivot, VBA)
+         </li>
+         <li>
+          Minitab (Statistical Analysis)
+         </li>
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  <!-- Featured Projects Section -->
+  <section class="bg-white rounded-lg shadow-md p-8 md:p-12" id="Proyek">
+   <h2 class="text-4xl font-bold text-center mb-12 tracking-wide text-gray-800">
+    Proyek
+   </h2>
+   <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+
+  <!-- Instagram Reels: Juara 3 Short Movie STikes -->
+  <article onclick="openReels('https://www.instagram.com/reel/DJoEdXIOJCS/')" class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+    <img src="FILM1.jpg" class="w-full h-48 object-cover" alt="Screenshot video film" />
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">Sentuhan Terakhir</h3>
+      <p class="text-gray-700">Juara 3 Short Movie STikes</p>
+    </div>
+  </article>
+
+  <!-- Google Drive File: Amerop Business Academy -->
+  <article onclick="openModal('https://drive.google.com/file/d/14mJo6HIR0LFztzrSky_kpX5xunWmG1aF/view?usp=sharing')" class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+    <img src="Nurul Maghrifah.png" class="w-full h-48 object-cover" alt="Motion graphic thumbnail" />
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">Amerop Business Academy 2025</h3>
+      <p class="text-gray-700">Lolos Proposal Tahap Awal</p>
+    </div>
+  </article>
+
+  <!-- YouTube: Restart -->
+  <article onclick="openModal('https://www.youtube.com/embed/WDpl4NYPJdg')" class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+    <img src="film2.jpg" class="w-full h-48 object-cover" alt="Modern responsive website screenshot" />
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">Restart</h3>
+      <p class="text-gray-700">10 Besar Short Movie SIC 2025</p>
+    </div>
+  </article>
+
+  <!-- Instagram Reels: Ramadhan -->
+  <article onclick="openReels('https://www.instagram.com/reel/DHOcW-xSWrl/')" class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+    <img src="Thumbnail Film.jpg" class="w-full h-48 object-cover" alt="Editing timeline thumbnail" />
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">Jika ini adalah ramadhan terakhirku</h3>
+      <p class="text-gray-700">10 Besar Short Movie CozyKos.id 2025</p>
+    </div>
+  </article>
+
+  <!-- Google Drive Folder: Fotografer -->
+  <article onclick="window.open('https://drive.google.com/drive/folders/1BrvZaJFWQV-RTFZGapq4-OvBbButViw0', '_blank')" class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+    <img src="foto.jpg" class="w-full h-48 object-cover" alt="Fotografi thumbnail" />
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">Fotografer</h3>
+      <p class="text-gray-700">Acara Khitanan</p>
+    </div>
+  </article>
+
+  <!-- Google Drive File: Samsung -->
+  <article onclick="openModal('https://drive.google.com/file/d/1PDmQluCAJ5Cu6VMxVLPDeuEvFbr5TGH3/view?usp=sharing')" class="bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform cursor-pointer">
+    <img src="1.png" class="w-full h-48 object-cover" alt="Sertifikat Samsung" />
+    <div class="p-6">
+      <h3 class="text-xl font-semibold mb-2 text-indigo-700">Sertifikasi BSN</h3>
+      <p class="text-gray-700">Mengikuti Khursus dan Kegiatan</p>
+    </div>
+  </article>
+
+</div>
+
+<!-- Modal untuk YouTube dan Google Drive -->
+<div id="videoModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg overflow-hidden w-full max-w-3xl relative">
+    <button onclick="closeModal()" class="absolute top-2 right-2 text-gray-700 hover:text-black text-xl font-bold z-10">&times;</button>
+    <div class="aspect-w-16 aspect-h-9">
+      <iframe id="videoFrame" class="w-full h-full" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Modal untuk Instagram Reels -->
+<div id="reelsModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+  <div class="bg-white rounded-lg p-6 max-w-md text-center relative">
+    <button onclick="closeReels()" class="absolute top-2 right-2 text-gray-700 hover:text-black text-xl font-bold">&times;</button>
+    <h2 class="text-xl font-semibold mb-4">Tonton Video di Instagram</h2>
+    <p class="mb-4 text-gray-600">Klik tombol di bawah untuk membuka Reels:</p>
+    <a id="reelsLink" href="#" target="_blank" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition">Buka di Instagram</a>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function openModal(videoUrl) {
+    const refreshedUrl = videoUrl + "?autoplay=1&ts=" + new Date().getTime();
+    document.getElementById('videoFrame').src = refreshedUrl;
+    document.getElementById('videoModal').classList.remove('hidden');
+  }
+
+  function closeModal() {
+    document.getElementById('videoFrame').src = "";
+    document.getElementById('videoModal').classList.add('hidden');
+  }
+
+  function openReels(link) {
+    document.getElementById('reelsLink').href = link;
+    document.getElementById('reelsModal').classList.remove('hidden');
+  }
+
+  function closeReels() {
+    document.getElementById('reelsModal').classList.add('hidden');
+    document.getElementById('reelsLink').href = "#";
+  }
+</script>
+
+   </section>
+   <!-- Experience & Education Section -->
+   <section class="bg-white rounded-lg shadow-md p-8 md:p-12" id="experience">
+    <h2 class="text-3xl font-semibold text-[#1e2a47] mb-8 border-b-2 border-blue-800 inline-block pb-2">
+     Pengalaman
+    </h2>
+    <div class="relative border-l-4 border-blue-800 ml-4 md:ml-12">
+     <!-- Experience Item 1 -->
+     <div class="mb-10 ml-6 md:ml-12 relative">
+      <span aria-hidden="true" class="absolute -left-10 top-0 w-6 h-6 rounded-full bg-[#1e2a47] border-4 border-white shadow">
+      </span>
+      <h3 class="text-xl font-semibold text-blue-900">
+       Toko Bima - Depok, Jawa Barat
+      </h3>
+      <time class="block mb-2 text-sm font-normal text-gray-500">
+       2022 
+      </time>
+      <p class="text-gray-700 leading-relaxed">
+       Melakukan analisis proses produksi dan mengusulkan perbaikan untuk mengurangi waktu siklus dan meningkatkan kualitas produk.
+      </p>
+     </div>
+     <!-- Experience Item 2 -->
+     <div class="mb-10 ml-6 md:ml-12 relative">
+      <span aria-hidden="true" class="absolute -left-10 top-0 w-6 h-6 rounded-full bg-[#1e2a47] border-4 border-white shadow">
+      </span>
+      <h3 class="text-xl font-semibold text-blue-900">
+       Himpunan Mahasiswa Teknik Industri - Jakarta Global University
+ Anggota Informasi dan Komunikasi  
+      </h3>
+      <time class="block mb-2 text-sm font-normal text-gray-500">
+       2023 - Sekarang 
+      </time>
+      <p class="text-gray-700 leading-relaxed">
+       Membuat dan mengelola konten media sosial himpunan (Instagram & Line), dengan fokus 
+pada informasi kegiatan dan branding organisasi. 
+      </p>
+     </div>
+     <!-- Education Item 1 -->
+     <div class="mb-10 ml-6 md:ml-12 relative">
+      <span aria-hidden="true" class="absolute -left-10 top-0 w-6 h-6 rounded-full bg-[#1e2a47] border-4 border-white shadow">
+      </span>
+      <h3 class="text-xl font-semibold text-blue-900">
+       S1 Teknik Industri - Jakarta Global University
+      </h3>
+      <time class="block mb-2 text-sm font-normal text-gray-500">
+       2023 - Sekarang
+      </time>
+      <p class="text-gray-700 leading-relaxed">
+       Fokus pada manajemen operasi, analisis data industri, dan peningkatan proses.
+      </p>
+     </div>
+     <!-- Certification -->
+     <div class="mb-10 ml-6 md:ml-12 relative">
+      <span aria-hidden="true" class="absolute -left-10 top-0 w-6 h-6 rounded-full bg-[#1e2a47] border-4 border-white shadow">
+      </span>
+      <h3 class="text-xl font-semibold text-blue-900">
+       UKM Art & Sport Association - Jakarta Global University
+ Bendahara 
+      </h3>
+      <time class="block mb-2 text-sm font-normal text-gray-500">
+       2024 - Sekarang 
+      </time>
+      <p class="text-gray-700 leading-relaxed">
+       Mengelola arus kas organisasi dengan mencatat secara rinci seluruh pemasukan (iuran 
+anggota, dana fakultas) dan pengeluaran (operasional, acara, logistik).
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="bg-white rounded-lg shadow-md p-8 md:p-12" id="contact"></section>
+     <div class="mt-12 text-center md:text-left space-y-4 text-gray-700">
+      <p class="font-semibold text-[#1e2a47] text-lg">
+       Media Sosial &amp; Kontak
+      </p>
+      <div class="flex justify-center md:justify-start space-x-6 text-2xl text-[#1e2a47]">
+       <a aria-label="LinkedIn" class="hover:text-blue-600 transition" href="https://www.linkedin.com/in/nurul-maghrifah-32084b260" rel="noopener noreferrer" target="_blank">
+        <i class="fab fa-linkedin">
+        </i>
+       </a>
+      </div>
+      <p class="mt-4">
+       <i class="fas fa-envelope mr-2">
+       </i>
+       <a class="hover:underline text-blue-700" href="092023090160@student.jgu.ac.id">
+        092023090160@student.jgu.ac.id
+       </a>
+      </p>
+      <p>
+       <i class="fab fa-whatsapp mr-2">
+       </i>
+       <a class="hover:underline text-green-700" a href="https://wa.me/6285817180424" target="_blank">
+        +62 858-1718-0424
+       </a>
+      </p>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-[#1e2a47] text-gray-300 py-6 text-center text-sm">
+   © 2025 Nurul Maghrifah. Portofolio Teknik Industri | Efisiensi dan Inovasi untuk Masa Depan.
+
+  </footer>
+ </body>
+</html>
